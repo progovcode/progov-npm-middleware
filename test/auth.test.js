@@ -53,7 +53,7 @@ describe('Given middlewares', () => {
 		
 		it('should call next once if user is authorized', () => {
 
-			jwtStub.returns({
+			jwtStub.withArgs('token', 'PRIVATE_KEY').returns({
 				email: 'test@test.test',
 				roles: [
 					{
