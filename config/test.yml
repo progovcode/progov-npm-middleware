@@ -1,0 +1,4 @@
+progov:
+  middleware:
+    auth:
+      private-key: 'PRIVATE_KEY'

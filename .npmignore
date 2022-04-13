@@ -1,0 +1,11 @@
+.babelrc
+.env
+.gitignore
+.npmrc
+src
+test
+config
+coverage
+.nyc_output
+README.md
+LICENSE

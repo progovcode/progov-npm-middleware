@@ -1,0 +1,44 @@
+{
+  "name": "progov-npm-middlewares",
+  "version": "1.0.0",
+  "description": "progov npm middlewares library",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "babel src --out-dir lib",
+    "coverage": "nyc --reporter=lcov --reporter=html npm test",
+    "publish:package": "npm run build && npm publish",
+    "test": "mocha --require @babel/register"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/progovcode/progov-npm-middlewares.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/progovcode/progov-npm-middlewares/issues"
+  },
+  "homepage": "https://github.com/progovcode/progov-npm-middlewares#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.16.8",
+    "@babel/core": "^7.16.7",
+    "@babel/plugin-transform-runtime": "^7.16.10",
+    "@babel/preset-env": "^7.16.8",
+    "@babel/register": "^7.16.9",
+    "chai": "^4.3.4",
+    "config": "^3.3.7",
+    "jsonwebtoken": "^8.5.1",
+    "mocha": "^9.1.4",
+    "node-mocks-http": "^1.11.0",
+    "nyc": "^15.1.0",
+    "progov-npm-utils": "^1.0.0",
+    "sinon": "^12.0.1",
+    "sinon-chai": "^3.7.0"
+  },
+  "peerDependencies": {
+    "config": ">=3.3.7",
+    "jsonwebtoken": ">=8.5.1",
+    "progov-npm-utils": ">=1.0.0"
+  }
+}
