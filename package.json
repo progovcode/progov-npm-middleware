@@ -1,6 +1,6 @@
 {
   "name": "progov-npm-middlewares",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "progov npm middlewares library",
   "main": "lib/index.js",
   "scripts": {
